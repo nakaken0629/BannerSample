@@ -29,17 +29,40 @@
                                     <constraint firstAttribute="height" constant="50" id="gBb-vp-WgM"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SkB-Ap-Y9T">
+                                <rect key="frame" x="0.0" y="518" width="600" height="33"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="a7S-LQ-Mho"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="uCs-Op-pvs" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" constant="-50" id="Lfb-gr-z05"/>
+                            <constraint firstItem="SkB-Ap-Y9T" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="4Kd-Pz-uYN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SkB-Ap-Y9T" secondAttribute="trailing" constant="-20" id="Jii-C7-GHK"/>
+                            <constraint firstItem="uCs-Op-pvs" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" constant="-50" id="Lfb-gr-z05">
+                                <variation key="heightClass=compact" constant="-33"/>
+                            </constraint>
                             <constraint firstAttribute="trailingMargin" secondItem="8Hg-mj-wkR" secondAttribute="trailing" constant="-20" id="N62-TQ-42W"/>
                             <constraint firstItem="uCs-Op-pvs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="aET-5D-dmK"/>
                             <constraint firstItem="8Hg-mj-wkR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="dwG-Xt-Xdb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SkB-Ap-Y9T" secondAttribute="bottom" id="fAE-bF-GIY"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uCs-Op-pvs" secondAttribute="trailing" constant="-20" id="jIT-HL-mie"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Hg-mj-wkR" secondAttribute="bottom" id="nie-t8-ljA"/>
                             <constraint firstItem="uCs-Op-pvs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="yci-rw-goV"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="SkB-Ap-Y9T"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <exclude reference="8Hg-mj-wkR"/>
+                                <include reference="SkB-Ap-Y9T"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" title="バナー" id="jnZ-XO-Boj"/>
                     <connections>
